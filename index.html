@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana Prediction Expert</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('back.jpeg') no-repeat center center/cover;
+        }
+
+        /* Container styling */
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: #fff url('background.jpeg') no-repeat center center;
+            background-size: cover;
+            border: 3px solid #ffdf00;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #ffdf00;
+        }
+
+        /* Timer styling */
+        #timer {
+            font-size: 1.5em;
+            margin-top: 15px;
+            color: #00ff99;
+        }
+
+        /* Button styling */
+        .button-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffdf00;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .button img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .button:hover {
+            transform: scale(1.2);
+        }
+
+        /* Keyframe animation for buttons */
+        .button-container .button {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+/* Blinking animation */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Apply blinking animation to timer */
+#timer {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #00ff99;
+  animation: blink 1s infinite;
+}
+
+/* Button Styling */
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  width: 140px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0088cc;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.button span {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #0077b3;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Pulse Animation */
+.button-container .telegram-button {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo"></div>
+        <h1>Rana Prediction Expert</h1>
+
+        <!-- Timer Display -->
+        <div id="timer">20s</div>
+
+        <!-- Social Media Buttons -->
+        <div class="button-container">
+            <div class="button telegram-button">
+                <a href="https://t.me/+Jt_2v7FRaCBiZTY9" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png"
+                    alt="Telegram">
+                  <span>Join Now</span>
+                </a>
+              </div>
+              </div>
+              
+              <div class="button-container">
+
+            <div class="button">
+                <a href="https://www.instagram.com/ranaprediction_/profilecard/?igsh=MWk1NnpoenVtaTk3MA=="
+                    target="_blank">
+                    <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-three-dimensional-instagram-icon-png-image_9015419.png"
+                        alt="Instagram">
+                  <span>Follow Now</span>
+                </a>
+            </div>
+        </div><br />
+
+        <!-- Description -->
+        <div class="main-contriner">
+            🔍 Cricket Analysis | 💰Trading insights | ✈️Lifestyle<br>
+            💥World best : 95% Accuracy🎯<br>
+            📊Founder of the cricket trading💸
+        </div><br />
+
+    </div>
+
+    <script>
+        // Timer countdown function
+        let timeLeft = 20;
+        const timerDisplay = document.getElementById('timer');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerDisplay.textContent = timeLeft + 's';
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'https://t.me/+Jt_2v7FRaCBiZTY9';
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
